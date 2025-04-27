@@ -1,42 +1,77 @@
+/* Root container styles */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  max-width: 1280px; /* Set the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 2rem; /* Add padding around the container */
+  text-align: center; /* Center-align the text inside the container */
+  box-sizing: border-box; /* Include padding in the element's width */
 }
 
+/* Styles for the container */
+.container {
+  text-align: center; /* Center-align the text inside the container */
+  padding: 2rem; /* Add padding around the container */
+}
+
+/* Styles for the "Refresh" button */
+.refresh-button {
+  background-color: #2a9d8f; /* Green background color */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding inside the button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Set font size */
+}
+
+.refresh-button:hover {
+  background-color: #21867a; /* Slightly darker shade on hover */
+}
+
+/* Logo styles */
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  height: 6em; /* Set the height of the logo */
+  padding: 1.5em; /* Add padding around the logo */
+  will-change: filter; /* Optimize rendering for filter changes */
+  transition: filter 300ms; /* Smooth transition for filter changes */
 }
 
+/* Hover effect for the logo */
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa); /* Add a glowing shadow effect */
+}
+
+/* Hover effect for React-specific logos */
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa); /* Add a React-themed glowing shadow */
+}
+
+/* Keyframes for spinning animation */
 @keyframes logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Start at 0 degrees */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* Complete a full rotation */
   }
 }
 
+/* Apply spinning animation to specific logos */
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+    animation: logo-spin infinite 20s linear; /* Infinite spin with a 20-second duration */
   }
 }
 
+/* Card styles */
 .card {
-  padding: 2em;
+  padding: 2em; /* Add padding inside the card */
 }
 
+/* Styles for the "Read the Docs" text */
 .read-the-docs {
-  color: #888;
+  color: #888; /* Set the text color to a light gray */
+  margin-top: 1rem; /* Add spacing above the text */
 }
+
+

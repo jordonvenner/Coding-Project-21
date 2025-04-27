@@ -1,0 +1,59 @@
+/* Styles for the tour card */
+.tour-card {
+  border: 1px solid #ddd; /* Light border around the card */
+  border-radius: 8px; /* Rounded corners for the card */
+  padding: 16px; /* Padding inside the card */
+  margin: 16px 0; /* Margin between cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+  max-width: 400px; /* Maximum width of the card */
+  transition: transform 0.2s ease, opacity 0.2s ease; /* Smooth transition for hover effects */
+}
+
+/* Dim the card when hovered */
+.tour-card:hover {
+  opacity: 0.9; /* Dim the card */
+  transform: scale(1.02); /* Slightly enlarge the card */
+}
+
+/* Styles for the tour card image */
+.tour-card-image {
+  width: 100%; /* Make the image take the full width of the card */
+  height: 200px; /* Set a fixed height for the image */
+  object-fit: cover; /* Ensure the image maintains its aspect ratio and fills the container */
+  border-radius: 8px; /* Rounded corners for the image */
+}
+
+/* Styles for the tour card details */
+.tour-card-details {
+  margin-top: 16px; /* Space between the image and the details */
+}
+
+.tour-card-name {
+  margin: 0 0 8px; /* Space below the name */
+}
+
+.tour-card-price {
+  margin: 0 0 16px; /* Space below the price */
+  color: #2a9d8f; /* Greenish color for the price */
+}
+
+.tour-card-info {
+  margin-bottom: 16px; /* Space below the description */
+  color: #555; /* Gray color for the description text */
+}
+
+/* Styles for the "Not Interested" button */
+.not-interested-button {
+  background-color: #e63946; /* Red background for the button */
+  color: #fff; /* White text color */
+  border: none; /* No border for the button */
+  padding: 8px 16px; /* Padding inside the button */
+  border-radius: 4px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: opacity 0.2s ease; /* Smooth transition for hover effects */
+}
+
+/* Dim the button when hovered */
+.not-interested-button:hover {
+  opacity: 0.8; /* Dim the button */
+}

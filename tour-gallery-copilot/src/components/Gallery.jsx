@@ -1,10 +1,11 @@
 import React from 'react';
 import TourCard from './TourCard'; // Import the TourCard component
+import './Gallery.css'; // Import the CSS file for styles
 
 // Gallery component to display a list of tours
 const Gallery = ({ tours, onRemove }) => {
   return (
-    <div style={styles.gallery}>
+    <div className="gallery">
       {/* Map over the tours array and render a TourCard for each tour */}
       {tours.map((tour) => (
         <TourCard
@@ -19,17 +20,6 @@ const Gallery = ({ tours, onRemove }) => {
       ))}
     </div>
   );
-};
-
-// Inline styles for the gallery container
-const styles = {
-  gallery: {
-    display: 'flex', // Use flexbox for layout
-    flexWrap: 'wrap', // Allow wrapping of items to the next row
-    gap: '16px', // Add spacing between items
-    justifyContent: 'center', // Center items horizontally
-    padding: '16px', // Add padding around the gallery
-  },
 };
 
 export default Gallery;
