@@ -36,7 +36,6 @@ const App = () => {
 
     fetchTours(); // Call the fetchTours function
   }, []); // Empty dependency array ensures this runs only once when the component mounts
-
   // Render the list of tours fetched
   return (
     <div>
