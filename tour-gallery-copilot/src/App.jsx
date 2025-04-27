@@ -38,6 +38,16 @@ const App = () => {
     setTours(tours.filter((tour) => tour.id !== id)); // Filter out the tour with the given id
   };
 
+  // Render a loading message while data is being fetched
+  if (loading) {
+    return <h2>Loading...</h2>; // Display a loading message
+  }
+
+  // Render an error message if there was an issue fetching the data
+  if (error) {
+    return <h2>Error: {error}</h2>; // Display the error message
+  }
+
   // Render the Gallery component with the list of tours
   return (
     <div>
